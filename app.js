@@ -139,7 +139,7 @@ client.on('message', async msg => {
   } else if (msg.body === '!groupinfo') {
       let chat = await msg.getChat();
       if (chat.isGroup) {
-          msg.reply(`
+          msg.reply(
               *Group Details*
               Name: ${chat.name}
               Description: ${chat.description}
